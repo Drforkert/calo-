@@ -1,0 +1,540 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: #FF0000;
+}
+:target:before{
+    content:"";
+    display: block;
+    height: 250px;
+    margin: -250px 0 0;
+}
+body{
+    background-color: #e6e6e6;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+.navbar{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+    background-color: rgba(0,0,0,1)!important;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,0.4);
+    z-index: 15;
+}
+.fa-bars {
+    color: white;
+}
+.nav-link{
+    color: white!important;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: grey!important;
+}
+.nav-item:active{
+    color: white!important;
+}
+.navbar-light .navbar-toggler{
+    border-color: transparent!important;
+    color: white!important;
+}
+button:focus{
+    outline: none!important;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: white!important;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.navbar-nav  {
+    align-items: left;
+}
+#carousel{
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.4);
+    background-color: #e6e6e6;
+}
+.carousel-inner{
+    max-height: 93vh!important;
+    object-fit: cover;
+}
+.carousel::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+}
+.carousel-control-next, .carousel-control-prev{
+    /* display: none; */
+    top: 70%!important;
+    bottom: 70%!important;
+    opacity: 1!important;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+    transition: transform 1.2s ease;
+    object-fit: cover;
+}
+.carousel-item img{
+    object-fit: cover;
+}
+.fa-chevron-left, .fa-chevron-right{
+    color: #fff!important;
+    font-weight: bold!important;
+    font-size: 2.8rem;
+    height: 16px;
+}
+#home .swiper-slide{
+    background: transparent; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+#home .swiper-container {
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 3rem; */
+    max-width: 500px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.erstberatungP {
+    color: black!important;
+}
+#home .sw-header{
+    color: white;
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Roboto';
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    height: 30px!important;
+    width: 30px!important;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white!important;
+}
+#home .swiper-button-next,
+#home .swiper-button-prev {
+    display: none;
+}
+#info{
+    background: #0000;
+}
+.mb-4 {
+    color: #000!important;
+}
+.shop-info i {
+    font-size: 50px;
+}
+#info .fab{
+    color: #000!important;
+    padding-bottom:25px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -30px!important;
+}
+/*** FOOTER **/
+#about p {
+    color: black!important;
+}
+.container-fluid {
+     overflow: hidden;
+     margin-top: 250px;
+     background: #262626;
+     color: #627482 !important;
+     margin-bottom: 0;
+     padding-bottom: 0
+}
+#footer {
+    height: 200px;
+    background-color: #000;
+}
+#footer .fab{
+    color: white;
+}
+#footer .row {
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+ small {
+     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .bold-text {
+     color: white !important
+ }
+
+ .mt-55 {
+     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ h3 {
+     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .social {
+     font-size: 21px !important
+ }
+
+ .rights {
+     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+#footer {
+    min-width: 100vw;
+}
+#footer .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+  
+/** Contact us FORM HERE **/
+#erstberatung {
+    height: 1200px;
+    background: #e6e6e6;
+    background: url(/assets/deadlift.jpg);
+    background-size: cover;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#erstberatung::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1300px;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+}
+#erstberatung p {
+    color: white!important;
+}
+#erstberatung h2 {
+    color: white!important;
+}
+
+.contact-section {
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info {
+    color: #fff;
+    max-width: 500px;
+    padding-left: 50px;
+    font-size: 18px;
+    z-index: 10;
+}
+.contact-form {
+    max-width: 700px;
+    padding-left: 20px;
+    margin-right: 50px;
+    z-index: 20;
+}
+.contact-form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-form .text-box {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.contact-form .text-box:first-child {
+    margin-right: 15px;
+}
+.contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    min-height: 200px;
+    max-height: 400px;
+    resize: none!important;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+textarea {
+    resize: none;
+}
+.contact-form .send-btn {
+    float: right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    transition-property: background; 
+}
+.contact-form .send-btn:hover{
+    background: #0582E3;
+}
+
+@media screen and (max-width: 950px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-form {
+        margin: 30px 50px;
+        padding: 20px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .contact-form .text-box {
+        width: 100%;
+    }
+}
+
+
+/** Contact us FORM END **/
+/** MEDIA QUERIES **/
+@media screen and (max-width: 320px) {
+    .navbar-brand{
+        font-size: 1.3rem;
+    }
+    #info .fab {
+        padding-bottom: 0px;
+    }
+    #footer {
+        height: 350px;
+    }
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    .sw-header {
+        font-size: 1.5rem!important;
+    }
+    .btn-group-lg>.btn, .btn-lg{
+        font-size: 1rem;
+    }
+    #home p{
+        font-size: 1.2rem!important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .swiper-container {
+        width: 320px!important;
+        height: 400px!important;
+        border-radius: 10px!important;
+    }
+    .swiper-slide img {
+        object-fit: cover;
+        height: 400px!important;
+        width: 320px!important;
+        border-radius: 10px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 75%;
+    }
+    #about {
+        padding-right: 0!important;
+    }
+    #info .fab {
+        padding-bottom: 0px;
+    }
+    #footer {
+        height: 350px;
+    }
+    .sw-header {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 770px) {
+    .navbar-brand{
+        font-size: 1.2rem;
+    }
+    .shop-info i{
+        font-size: 35px;
+    }
+    .shop-info h1{
+        font-size: 20px;
+    }
+    .shop-info p{
+        font-size: 1.1rem;
+    }
+    .carousel-inner{
+        max-height: 100%!important;
+        object-fit: cover;
+        margin-top: -55px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #info .fab {
+        padding-bottom: 17px;
+    }
+    #talk .erstberatungP {
+        font-size: 1.25rem!important;
+        font-weight: 300!important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .img-fluid{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .swiper-container {
+        width: 600px;
+        height: 500px;
+        border-radius: 10px!important;
+    }
+    #about img {
+        object-fit: cover;
+        height: 500px;
+        width: 800px;
+    }
+    #info .fab {
+        padding-bottom: 25px!important;
+    }
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-info h2 {
+        font-size: 2.5rem;
+        text-align: center!important;
+    }
+    .contact-info p {
+        font-size: 1.5rem;
+        text-align: center!important;
+    }
+    .contact-info {
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .tableImg {
+        height: 400px!important;
+        width: 960px;
+        object-fit: cover;
+    }
+    .swiper-container {
+        height: 700px;
+        width: 800px;
+        border-radius: 10px!important;
+    }
+    .swiper-slide img {
+        object-fit: cover;
+        cursor: pointer;
+        height: 700px;
+        width: 800px;
+        border-radius: 10px;
+    }
+    /* ABOUT SWIPER */
+    #about .swiper-container{
+        height: 500px;
+        width: 600px;
+    }
+    #about img {
+        object-fit: cover;
+        cursor: pointer;
+        height: 500px;
+        width: 600px;
+    }
+    #menu .container {
+        max-width: 100%;
+    }
+    #home .sw-header {
+        width: 100%;
+        color: white;
+        font-size: 4rem;
+        font-family: 'Niconne', cursive;
+        text-align: center;
+    }
+    #talk .erstberatungP {
+        margin: 120px!important;
+        font-size: 2rem!important;
+        font-weight: 300!important;
+    }
+    .contact-info h2{
+        text-align: left!important;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .contact-info p{
+        text-align: left!important;
+        font-size: 1.5rem;
+    }
+    #erstberatung {
+        height: 700px;
+    }
+    #erstberatung::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 800px;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.6);
+    }
+}
